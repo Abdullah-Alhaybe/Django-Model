@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'VZ.apps.VzConfig',
     'multiselectfield',
-    'django-extensions'
+    'django-extensions',
 ]
 
 MIDDLEWARE = [
