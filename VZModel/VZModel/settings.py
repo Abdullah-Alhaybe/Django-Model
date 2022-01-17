@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'VZ.apps.VzConfig',
+    'generic_form.apps.GenericFormConfig',
     'multiselectfield',
     'django_extensions',
 ]
