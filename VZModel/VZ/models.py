@@ -92,8 +92,8 @@ class progress(models.Model):
     leermoment_toelichting =models.CharField(max_length=500)
 
 
-    def __str__(self):
-        return self.project
+    # def __str__(self):
+    #     return self.project
 
 
 
@@ -132,8 +132,8 @@ class intern(models.Model):
     kosten_budget =  models.IntegerField(default=0)
 
 
-    def __str__(self):
-        return self.project
+    # def __str__(self):
+    #     return self.project
 
 
 class exact(models.Model):
