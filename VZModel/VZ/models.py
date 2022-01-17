@@ -128,7 +128,15 @@ class intern(models.Model):
     belangrijke_beslissing = models.CharField(max_length=200,choices=ja_nee,default=[1])
     welke = models.CharField(max_length=500)
     overleg_werkgroep = models.CharField(max_length=500)
+    uren_budget =  models.IntegerField(default=0)
+    kosten_budget =  models.IntegerField(default=0)
 
 
     def __str__(self):
         return self.project
+
+
+class exact(models.Model):
+    project = models.ForeignKey(project,null=True,on_delete=models.SET_NULL)
+    uren_bestede =  models.IntegerField(default=0)
+    kosten_bestede =  models.IntegerField(default=0)
